@@ -33,3 +33,4 @@ df = pd.DataFrame(
 )
 edited_df = st.data_editor(df)
 st.balloons()
+st.snow()
