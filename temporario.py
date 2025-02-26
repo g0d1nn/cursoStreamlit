@@ -1,24 +1,5 @@
 import streamlit as st
-import pandas as pd
-from io import StringIO
-uploaded_file = st.file_uploader("Escolha um arquivo")
-if uploaded_file is not None:
-    # To read file as bytes:
-    bytes_data = uploaded_file.getvalue()
-    st.write(bytes_data)
 
-    # To convert to a string based IO:
-    stringio = StringIO(uploaded_file.getvalue().decode("utf-8"))
-    st.write(stringio)
-
-    # To read file as string:
-    string_data = stringio.read()
-    st.write(string_data)
-
-    # Can be used wherever a "file-like" object is accepted:
-    dataframe = pd.read_csv(uploaded_file)
-    st.write(dataframe)
-  
 st.header("Cabeçalho")
 st.multiselect(
   "Quais suas cores favoritas",
@@ -36,4 +17,8 @@ st.selectbox(
 
 st.checkbox("Check")
 st.color_picker("Escolha uma cor", "#00f900")
-st.feedback("estrelas")
+
+sentiment_mapping = ["one", "two", "three", "four", "five"]
+selected = st.feedback("stars")
+if selected is not None:
+    st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
