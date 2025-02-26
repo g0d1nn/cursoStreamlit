@@ -35,3 +35,5 @@ st.selectbox(
 )
 
 st.checkbox("Check")
+st.color_picker("Escolha uma cor", "#00f900")
+st.feedback("estrelas")
