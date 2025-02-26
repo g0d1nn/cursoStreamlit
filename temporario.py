@@ -22,3 +22,12 @@ sentiment_mapping = ["one", "two", "three", "four", "five"]
 selected = st.feedback("stars")
 if selected is not None:
     st.markdown(f"You selected {sentiment_mapping[selected]} star(s).")
+
+df = pd.DataFrame(
+  [
+    {"command": "st.selectbox", "rating": 4, "is_widget": True},
+    {"command": "st.ballons", "rating": 5, "is_widget": False},
+    {"command": "st.time_input", "rating": 3, "is_widget": True},
+  ]
+)
+edited_df = st.data_editor(df)
