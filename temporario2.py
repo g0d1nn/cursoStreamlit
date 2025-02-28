@@ -1,7 +1,7 @@
 import datetime
 import streamlit as st
 
-nome = st.text_input("Escreva seu nome", " ", key= "i_2")
+nome = st.text_input("Escreva seu nome", " ", key= "i_1")
 cpf = st.text_input("Escreva seu cpf", " ", key= "i_2" )
 
 
