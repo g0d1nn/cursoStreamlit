@@ -1,9 +1,13 @@
 import datetime
 import streamlit as st
 
+ra = st.number_input(
+    "Escreva o seu RA", value=None, placeholder="Escreva um numero..."
+)
 nome = st.text_input("Escreva seu nome", " ", key= "i_1")
-number = st.number_input(
-    "Insert a number", value=None, placeholder="Type a number..."
+
+cpf = st.number_input(
+    "Escreva o seu CPF", value=None, placeholder="Escreva um numero..."
 )
 
 
