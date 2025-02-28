@@ -3,16 +3,9 @@ import streamlit as st
 
 st.title("Aluno")
 
-ra = st.number_input(
-    "Escreva o seu RA", value=None, placeholder="Escreva um numero..."
-)
-
-cpf = st.number_input(
-    "Escreva o seu CPF", value=None, placeholder="Escreva um numero..."
-)
-
-nome = st.text_input("Escreva seu nome", " ", key= "i_1")
-
+RA = st.text_input("Escreva seu RA", " ", key= "i_1")
+cpf = st.text_input("Escreva seu CPF", " ", key= "i_2")
+nome = st.text_input("Escreva seu nome", " ", key= "i_3")
 
 d = st.date_input("Data de nascimento", value=None)
 
