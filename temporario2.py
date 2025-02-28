@@ -1,6 +1,8 @@
 import datetime
 import streamlit as st
 
+st.title("Aluno")
+
 ra = st.number_input(
     "Escreva o seu RA", value=None, placeholder="Escreva um numero..."
 )
