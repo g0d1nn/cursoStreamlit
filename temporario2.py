@@ -1,8 +1,8 @@
 import datetime
 import streamlit as st
-
+ra = st.number_input("Escreva seu ra", " ", key= "i_3" )
 nome = st.text_input("Escreva seu nome", " ", key= "i_1")
-cpf = st.text_input("Escreva seu cpf", " ", key= "i_2" )
+cpf = st.number_input("Escreva seu cpf", " ", key= "i_2" )
 
 
 d = st.date_input("Data de nascimento", value=None)
