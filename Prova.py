@@ -19,11 +19,11 @@ st.write(f"Salário: R${salario}")
 
 if salario < 2.500:
     st.write("O funcionario deve receber aumento")
+    aumento = 0
+    while aumento < 500:
+        aumento = aumento +100
 else:
     st.write("O funcionario não deve receber aumento")
 
-aumento = 0
-while aumento < 500:
-    aumento = aumento +100
 
 st.write(f"O aumento é: {aumento} ")
