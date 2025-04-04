@@ -18,9 +18,9 @@ st.write(f"Estado civil: {estadoCivil}")
 st.write(f"Salário: R${salario}")
 
 if salario < 2.500:
-    print("O funcionario deve receber aumento")
+    st.write("O funcionario deve receber aumento")
 else:
-    print("O funcionario nao deve receber aumento")
+    st.write("O funcionario nao deve receber aumento")
 
 aumento = 0
 while aumento < 500:
